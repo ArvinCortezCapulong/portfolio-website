@@ -5,14 +5,31 @@ body {
   color: #333;
 }
 
-.hero {
+/* .hero {
   text-align: center;
   padding: 80px 20px;
   background: #111;
   color: white;
+} */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(
+    135deg,
+    #f0f9ff 0%,
+    #e0f2fe 50%,
+    #dbeafe 100%
+  );
+  color: #1e293b;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero a {
+
+/* .hero a {
   display: inline-block;
   margin: 10px;
   color: white;
@@ -20,6 +37,33 @@ body {
   border: 1px solid white;
   padding: 10px 15px;
   border-radius: 5px;
+} */
+
+.hero a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+
+  background: #2563eb;
+  color: white;
+
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+/* hover action  */
+.hero a:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* this to make buttons feel more interactive: */
+.hero a {
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 
 .section {
@@ -31,6 +75,22 @@ body {
 h2 {
   border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
+}
+
+.cta a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cta a:hover {
+  background: #1d4ed8;
 }
 
 .card {
